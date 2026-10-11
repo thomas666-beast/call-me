@@ -1,0 +1,12 @@
+pub mod agent_status;
+pub mod call_note;
+pub mod cdr;
+pub mod cel;
+pub mod contact;
+pub mod extension;
+pub mod queue;
+pub mod queue_log;
+pub mod recording;
+pub mod setting;
+pub mod user;
+pub mod agent;

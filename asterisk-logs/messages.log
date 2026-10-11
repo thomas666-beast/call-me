@@ -1,0 +1,391 @@
+[Sep 26 16:39:50] Asterisk 22.10.1 built by root @ buildkitsandbox on a x86_64 running Linux on 2026-09-16 12:59:15 UTC
+[Sep 26 16:39:50] NOTICE[1] loader.c: 341 modules will be loaded.
+[Sep 26 16:39:50] ERROR[1] res_config_pgsql.c: PostgreSQL RealTime: Failed to connect database callcenter on postgres: 
+[Sep 26 16:39:50] WARNING[1] res_config_pgsql.c: PostgreSQL RealTime: Couldn't establish connection. Check debug.
+[Sep 26 16:39:50] NOTICE[1] cdr.c: CDR simple logging enabled.
+[Sep 26 16:39:50] NOTICE[1] indications.c: Default country for indication tones: us
+[Sep 26 16:39:50] NOTICE[1] indications.c: Setting default indication country to 'us'
+[Sep 26 16:39:50] WARNING[1] res_phoneprov.c: Unable to find a valid server address or name.
+[Sep 26 16:39:50] NOTICE[1] res_smdi.c: No SMDI interfaces are available to listen on, not starting SMDI listener.
+[Sep 26 16:39:50] WARNING[1] res_musiconhold.c: No music on hold classes configured, disabling music on hold.
+[Sep 26 16:39:51] NOTICE[1] confbridge/conf_config_parser.c: Adding default_menu menu to app_confbridge
+[Sep 26 16:39:51] ERROR[1] cdr_pgsql.c: Unable to connect to database server postgres.  CALLS WILL NOT BE LOGGED!!
+[Sep 26 16:39:51] ERROR[1] cdr_pgsql.c: Reason: connection to server at "postgres" (172.18.0.2), port 5432 failed: FATAL:  password authentication failed for user "callcenter"
+
+[Sep 26 16:39:51] ERROR[1] cel_pgsql.c: cel_pgsql: Unable to connect to database server postgres.  CALLS WILL NOT BE LOGGED!!
+[Sep 26 16:39:51] ERROR[1] cel_pgsql.c: cel_pgsql: Reason: connection to server at "postgres" (172.18.0.2), port 5432 failed: FATAL:  password authentication failed for user "callcenter"
+
+[Sep 26 16:39:51] NOTICE[1] cdrel_custom/config.c: cdr_custom.conf: Loaded 0 configs
+[Sep 26 16:39:51] WARNING[1] config.c: parse error: No category context for line 64 of /etc/asterisk/cel_sqlite3_custom.conf
+[Sep 26 16:39:51] ERROR[1] cdrel_custom/config.c: Unable to load cel_sqlite3_custom.conf. Not logging CELs to custom database
+[Sep 26 16:39:51] NOTICE[1] cdrel_custom/config.c: cel_custom.conf: Loaded 0 configs
+[Sep 26 16:39:51] NOTICE[1] cdrel_custom/config.c: cdr_sqlite3_custom.conf: Loaded 0 configs
+[Sep 26 16:39:51] WARNING[1] ael/pval.c: Warning: file /etc/asterisk/extensions.ael, line 196-196: macro call to ael-dundi-e164 cannot be found in the AEL code!
+[Sep 26 16:39:51] WARNING[1] ael/pval.c: Warning: file /etc/asterisk/extensions.ael, line 209-209: macro call to ael-dundi-e164 cannot be found in the AEL code!
+[Sep 26 16:39:51] WARNING[1] ael/pval.c: Warning: file /etc/asterisk/extensions.ael, line 328-328: macro call to ael-std-exten-ael cannot be found in the AEL code!
+[Sep 26 16:39:51] WARNING[1] loader.c: Some non-required modules failed to load.
+[Sep 26 16:39:51] WARNING[1] loader.c: Module 'res_adsi' has been loaded but may be removed in a future release.
+[Sep 26 16:39:51] WARNING[1] loader.c: Module 'app_adsiprog' has been loaded but may be removed in a future release.
+[Sep 26 16:39:51] WARNING[1] loader.c: Module 'app_getcpeid' has been loaded but may be removed in a future release.
+[Sep 26 16:39:51] ERROR[1] loader.c: Error loading module 'format_ogg_vorbis.so': libvorbisenc.so.2: cannot open shared object file: No such file or directory
+[Sep 26 16:39:51] ERROR[1] loader.c: cdr_csv declined to load.
+[Sep 26 16:39:51] ERROR[1] loader.c: cdr_custom declined to load.
+[Sep 26 16:39:51] ERROR[1] loader.c: cel_sqlite3_custom declined to load.
+[Sep 26 16:39:51] ERROR[1] loader.c: cel_custom declined to load.
+[Sep 26 16:39:51] ERROR[1] loader.c: cdr_sqlite3_custom declined to load.
+[Sep 26 16:39:51] WARNING[34] pbx_config.c: users.conf is deprecated and will be removed in a future version of Asterisk
+[Sep 26 16:39:51] ERROR[1] res_config_pgsql.c: PostgreSQL RealTime: Failed to query 'queue_log@callcenter'.
+[Sep 26 16:39:51] ERROR[1] res_config_pgsql.c: PostgreSQL RealTime: Query Failed: SELECT a.attname, t.typname, a.attlen, a.attnotnull, d.adsrc, a.atttypmod FROM pg_class c, pg_type t, pg_attribute a LEFT OUTER JOIN pg_attrdef d ON a.atthasdef AND d.adrelid = a.attrelid AND d.adnum = a.attnum WHERE c.oid = a.attrelid AND a.atttypid = t.oid AND (a.attnum > 0) AND c.relname = 'queue_log' ORDER BY c.relname, attnum
+[Sep 26 16:39:51] ERROR[1] res_config_pgsql.c: PostgreSQL RealTime: Query Failed because:  (PGRES_FATAL_ERROR)
+[Sep 26 16:39:51] ERROR[1] res_config_pgsql.c: PostgreSQL RealTime: Failed to connect database callcenter on postgres: 
+[Sep 26 16:39:51] NOTICE[1] res_config_pgsql.c: reconnect failed
+[Sep 26 16:39:51] ERROR[1] res_config_pgsql.c: Failed to query database columns for table queue_log
+[Sep 26 16:39:51] WARNING[1] res_config_pgsql.c: Table queue_log not found in database.  This table should exist if you're using realtime.
+[Sep 26 16:39:51] ERROR[1] res_config_pgsql.c: PostgreSQL RealTime: Failed to connect database callcenter on postgres: 
+[Sep 26 16:42:10] Asterisk 22.10.1 built by root @ buildkitsandbox on a x86_64 running Linux on 2026-09-16 12:59:15 UTC
+[Sep 26 16:42:10] NOTICE[1] loader.c: 341 modules will be loaded.
+[Sep 26 16:42:10] ERROR[1] res_config_pgsql.c: PostgreSQL RealTime: Failed to connect database callcenter on postgres: 
+[Sep 26 16:42:10] WARNING[1] res_config_pgsql.c: PostgreSQL RealTime: Couldn't establish connection. Check debug.
+[Sep 26 16:42:10] NOTICE[1] cdr.c: CDR simple logging enabled.
+[Sep 26 16:42:10] NOTICE[1] indications.c: Default country for indication tones: us
+[Sep 26 16:42:10] NOTICE[1] indications.c: Setting default indication country to 'us'
+[Sep 26 16:42:10] WARNING[1] res_phoneprov.c: Unable to find a valid server address or name.
+[Sep 26 16:42:10] NOTICE[1] res_smdi.c: No SMDI interfaces are available to listen on, not starting SMDI listener.
+[Sep 26 16:42:10] WARNING[1] res_musiconhold.c: No music on hold classes configured, disabling music on hold.
+[Sep 26 16:42:10] NOTICE[1] confbridge/conf_config_parser.c: Adding default_menu menu to app_confbridge
+[Sep 26 16:42:10] ERROR[1] cdr_pgsql.c: Unable to connect to database server postgres.  CALLS WILL NOT BE LOGGED!!
+[Sep 26 16:42:10] ERROR[1] cdr_pgsql.c: Reason: connection to server at "postgres" (172.18.0.2), port 5432 failed: FATAL:  password authentication failed for user "callcenter"
+
+[Sep 26 16:42:11] ERROR[1] cel_pgsql.c: cel_pgsql: Unable to connect to database server postgres.  CALLS WILL NOT BE LOGGED!!
+[Sep 26 16:42:11] ERROR[1] cel_pgsql.c: cel_pgsql: Reason: connection to server at "postgres" (172.18.0.2), port 5432 failed: FATAL:  password authentication failed for user "callcenter"
+
+[Sep 26 16:42:11] NOTICE[1] cdrel_custom/config.c: cdr_custom.conf: Loaded 0 configs
+[Sep 26 16:42:11] WARNING[1] config.c: parse error: No category context for line 64 of /etc/asterisk/cel_sqlite3_custom.conf
+[Sep 26 16:42:11] ERROR[1] cdrel_custom/config.c: Unable to load cel_sqlite3_custom.conf. Not logging CELs to custom database
+[Sep 26 16:42:11] NOTICE[1] cdrel_custom/config.c: cel_custom.conf: Loaded 0 configs
+[Sep 26 16:42:11] NOTICE[1] cdrel_custom/config.c: cdr_sqlite3_custom.conf: Loaded 0 configs
+[Sep 26 16:42:11] WARNING[1] ael/pval.c: Warning: file /etc/asterisk/extensions.ael, line 196-196: macro call to ael-dundi-e164 cannot be found in the AEL code!
+[Sep 26 16:42:11] WARNING[1] ael/pval.c: Warning: file /etc/asterisk/extensions.ael, line 209-209: macro call to ael-dundi-e164 cannot be found in the AEL code!
+[Sep 26 16:42:11] WARNING[1] ael/pval.c: Warning: file /etc/asterisk/extensions.ael, line 328-328: macro call to ael-std-exten-ael cannot be found in the AEL code!
+[Sep 26 16:42:11] WARNING[1] loader.c: Some non-required modules failed to load.
+[Sep 26 16:42:11] WARNING[1] loader.c: Module 'res_adsi' has been loaded but may be removed in a future release.
+[Sep 26 16:42:11] WARNING[1] loader.c: Module 'app_adsiprog' has been loaded but may be removed in a future release.
+[Sep 26 16:42:11] WARNING[1] loader.c: Module 'app_getcpeid' has been loaded but may be removed in a future release.
+[Sep 26 16:42:11] ERROR[1] loader.c: Error loading module 'format_ogg_vorbis.so': libvorbisenc.so.2: cannot open shared object file: No such file or directory
+[Sep 26 16:42:11] ERROR[1] loader.c: cdr_csv declined to load.
+[Sep 26 16:42:11] ERROR[1] loader.c: cdr_custom declined to load.
+[Sep 26 16:42:11] ERROR[1] loader.c: cel_sqlite3_custom declined to load.
+[Sep 26 16:42:11] ERROR[1] loader.c: cel_custom declined to load.
+[Sep 26 16:42:11] ERROR[1] loader.c: cdr_sqlite3_custom declined to load.
+[Sep 26 16:42:11] WARNING[32] pbx_config.c: users.conf is deprecated and will be removed in a future version of Asterisk
+[Sep 26 16:42:11] ERROR[1] res_config_pgsql.c: PostgreSQL RealTime: Failed to query 'queue_log@callcenter'.
+[Sep 26 16:42:11] ERROR[1] res_config_pgsql.c: PostgreSQL RealTime: Query Failed: SELECT a.attname, t.typname, a.attlen, a.attnotnull, d.adsrc, a.atttypmod FROM pg_class c, pg_type t, pg_attribute a LEFT OUTER JOIN pg_attrdef d ON a.atthasdef AND d.adrelid = a.attrelid AND d.adnum = a.attnum WHERE c.oid = a.attrelid AND a.atttypid = t.oid AND (a.attnum > 0) AND c.relname = 'queue_log' ORDER BY c.relname, attnum
+[Sep 26 16:42:11] ERROR[1] res_config_pgsql.c: PostgreSQL RealTime: Query Failed because:  (PGRES_FATAL_ERROR)
+[Sep 26 16:42:11] ERROR[1] res_config_pgsql.c: PostgreSQL RealTime: Failed to connect database callcenter on postgres: 
+[Sep 26 16:42:11] NOTICE[1] res_config_pgsql.c: reconnect failed
+[Sep 26 16:42:11] ERROR[1] res_config_pgsql.c: Failed to query database columns for table queue_log
+[Sep 26 16:42:11] WARNING[1] res_config_pgsql.c: Table queue_log not found in database.  This table should exist if you're using realtime.
+[Sep 26 16:42:11] ERROR[1] res_config_pgsql.c: PostgreSQL RealTime: Failed to connect database callcenter on postgres: 
+[Sep 26 16:47:06] NOTICE[58] sorcery.c: Type 'system' is not reloadable, maintaining previous values
+[Sep 26 16:47:06] NOTICE[493] app_queue.c: queuerules.conf has not changed since it was last loaded. Not taking any action.
+[Sep 26 16:47:24] NOTICE[58] sorcery.c: Type 'system' is not reloadable, maintaining previous values
+[Sep 26 16:47:24] NOTICE[534] app_queue.c: queuerules.conf has not changed since it was last loaded. Not taking any action.
+[Sep 26 16:48:18] NOTICE[58] sorcery.c: Type 'system' is not reloadable, maintaining previous values
+[Sep 26 16:48:18] NOTICE[614] app_queue.c: queuerules.conf has not changed since it was last loaded. Not taking any action.
+[Sep 26 17:24:49] ERROR[53] cel_pgsql.c: cel_pgsql: Unable to connect to database server postgres.  Calls will not be logged!
+[Sep 26 17:24:49] ERROR[53] cel_pgsql.c: cel_pgsql: Reason: connection to server at "postgres" (172.18.0.2), port 5432 failed: FATAL:  password authentication failed for user "callcenter"
+
+[Sep 26 17:24:49] ERROR[53] cel_pgsql.c: cel_pgsql: Unable to connect to database server postgres.  Calls will not be logged!
+[Sep 26 17:24:49] ERROR[53] cel_pgsql.c: cel_pgsql: Reason: connection to server at "postgres" (172.18.0.2), port 5432 failed: FATAL:  password authentication failed for user "callcenter"
+
+[Sep 26 17:24:55] ERROR[53] cel_pgsql.c: cel_pgsql: Unable to connect to database server postgres.  Calls will not be logged!
+[Sep 26 17:24:55] ERROR[53] cel_pgsql.c: cel_pgsql: Reason: connection to server at "postgres" (172.18.0.2), port 5432 failed: FATAL:  password authentication failed for user "callcenter"
+
+[Sep 26 17:24:55] ERROR[53] cel_pgsql.c: cel_pgsql: Unable to connect to database server postgres.  Calls will not be logged!
+[Sep 26 17:24:55] ERROR[53] cel_pgsql.c: cel_pgsql: Reason: connection to server at "postgres" (172.18.0.2), port 5432 failed: FATAL:  password authentication failed for user "callcenter"
+
+[Sep 26 17:24:55] ERROR[53] cel_pgsql.c: cel_pgsql: Unable to connect to database server postgres.  Calls will not be logged!
+[Sep 26 17:24:55] ERROR[53] cel_pgsql.c: cel_pgsql: Reason: connection to server at "postgres" (172.18.0.2), port 5432 failed: FATAL:  password authentication failed for user "callcenter"
+
+[Sep 26 17:24:55] ERROR[53] cel_pgsql.c: cel_pgsql: Unable to connect to database server postgres.  Calls will not be logged!
+[Sep 26 17:24:55] ERROR[53] cel_pgsql.c: cel_pgsql: Reason: connection to server at "postgres" (172.18.0.2), port 5432 failed: FATAL:  password authentication failed for user "callcenter"
+
+[Sep 26 17:25:00] ERROR[53] cel_pgsql.c: cel_pgsql: Unable to connect to database server postgres.  Calls will not be logged!
+[Sep 26 17:25:00] ERROR[53] cel_pgsql.c: cel_pgsql: Reason: connection to server at "postgres" (172.18.0.2), port 5432 failed: FATAL:  password authentication failed for user "callcenter"
+
+[Sep 26 17:25:00] ERROR[52] cdr_pgsql.c: Unable to connect to database server postgres.  Calls will not be logged!
+[Sep 26 17:25:00] ERROR[52] cdr_pgsql.c: Reason: connection to server at "postgres" (172.18.0.2), port 5432 failed: FATAL:  password authentication failed for user "callcenter"
+
+[Sep 26 17:25:00] ERROR[53] cel_pgsql.c: cel_pgsql: Unable to connect to database server postgres.  Calls will not be logged!
+[Sep 26 17:25:00] ERROR[53] cel_pgsql.c: cel_pgsql: Reason: connection to server at "postgres" (172.18.0.2), port 5432 failed: FATAL:  password authentication failed for user "callcenter"
+
+[Sep 26 17:25:00] ERROR[53] cel_pgsql.c: cel_pgsql: Unable to connect to database server postgres.  Calls will not be logged!
+[Sep 26 17:25:00] ERROR[53] cel_pgsql.c: cel_pgsql: Reason: connection to server at "postgres" (172.18.0.2), port 5432 failed: FATAL:  password authentication failed for user "callcenter"
+
+[Sep 26 17:25:00] ERROR[53] cel_pgsql.c: cel_pgsql: Unable to connect to database server postgres.  Calls will not be logged!
+[Sep 26 17:25:00] ERROR[53] cel_pgsql.c: cel_pgsql: Reason: connection to server at "postgres" (172.18.0.2), port 5432 failed: FATAL:  password authentication failed for user "callcenter"
+
+[Sep 26 17:25:00] ERROR[53] cel_pgsql.c: cel_pgsql: Unable to connect to database server postgres.  Calls will not be logged!
+[Sep 26 17:25:00] ERROR[53] cel_pgsql.c: cel_pgsql: Reason: connection to server at "postgres" (172.18.0.2), port 5432 failed: FATAL:  password authentication failed for user "callcenter"
+
+[Sep 26 17:25:00] ERROR[53] cel_pgsql.c: cel_pgsql: Unable to connect to database server postgres.  Calls will not be logged!
+[Sep 26 17:25:00] ERROR[53] cel_pgsql.c: cel_pgsql: Reason: connection to server at "postgres" (172.18.0.2), port 5432 failed: FATAL:  password authentication failed for user "callcenter"
+
+[Sep 26 17:25:00] ERROR[53] cel_pgsql.c: cel_pgsql: Unable to connect to database server postgres.  Calls will not be logged!
+[Sep 26 17:25:00] ERROR[53] cel_pgsql.c: cel_pgsql: Reason: connection to server at "postgres" (172.18.0.2), port 5432 failed: FATAL:  password authentication failed for user "callcenter"
+
+[Sep 26 17:25:29] ERROR[53] cel_pgsql.c: cel_pgsql: Unable to connect to database server postgres.  Calls will not be logged!
+[Sep 26 17:25:29] ERROR[53] cel_pgsql.c: cel_pgsql: Reason: connection to server at "postgres" (172.18.0.2), port 5432 failed: FATAL:  password authentication failed for user "callcenter"
+
+[Sep 26 17:25:29] ERROR[53] cel_pgsql.c: cel_pgsql: Unable to connect to database server postgres.  Calls will not be logged!
+[Sep 26 17:25:29] ERROR[53] cel_pgsql.c: cel_pgsql: Reason: connection to server at "postgres" (172.18.0.2), port 5432 failed: FATAL:  password authentication failed for user "callcenter"
+
+[Sep 26 17:25:33] ERROR[52] cdr_pgsql.c: Unable to connect to database server postgres.  Calls will not be logged!
+[Sep 26 17:25:33] ERROR[52] cdr_pgsql.c: Reason: connection to server at "postgres" (172.18.0.2), port 5432 failed: FATAL:  password authentication failed for user "callcenter"
+
+[Sep 26 17:25:33] ERROR[53] cel_pgsql.c: cel_pgsql: Unable to connect to database server postgres.  Calls will not be logged!
+[Sep 26 17:25:33] ERROR[53] cel_pgsql.c: cel_pgsql: Reason: connection to server at "postgres" (172.18.0.2), port 5432 failed: FATAL:  password authentication failed for user "callcenter"
+
+[Sep 26 17:25:33] ERROR[53] cel_pgsql.c: cel_pgsql: Unable to connect to database server postgres.  Calls will not be logged!
+[Sep 26 17:25:33] ERROR[53] cel_pgsql.c: cel_pgsql: Reason: connection to server at "postgres" (172.18.0.2), port 5432 failed: FATAL:  password authentication failed for user "callcenter"
+
+[Sep 26 17:25:33] ERROR[53] cel_pgsql.c: cel_pgsql: Unable to connect to database server postgres.  Calls will not be logged!
+[Sep 26 17:25:33] ERROR[53] cel_pgsql.c: cel_pgsql: Reason: connection to server at "postgres" (172.18.0.2), port 5432 failed: FATAL:  password authentication failed for user "callcenter"
+
+[Sep 26 17:25:33] ERROR[53] cel_pgsql.c: cel_pgsql: Unable to connect to database server postgres.  Calls will not be logged!
+[Sep 26 17:25:33] ERROR[53] cel_pgsql.c: cel_pgsql: Reason: connection to server at "postgres" (172.18.0.2), port 5432 failed: FATAL:  password authentication failed for user "callcenter"
+
+[Sep 26 17:25:33] ERROR[53] cel_pgsql.c: cel_pgsql: Unable to connect to database server postgres.  Calls will not be logged!
+[Sep 26 17:25:33] ERROR[53] cel_pgsql.c: cel_pgsql: Reason: connection to server at "postgres" (172.18.0.2), port 5432 failed: FATAL:  password authentication failed for user "callcenter"
+
+[Sep 26 17:25:42] ERROR[53] cel_pgsql.c: cel_pgsql: Unable to connect to database server postgres.  Calls will not be logged!
+[Sep 26 17:25:42] ERROR[53] cel_pgsql.c: cel_pgsql: Reason: connection to server at "postgres" (172.18.0.2), port 5432 failed: FATAL:  password authentication failed for user "callcenter"
+
+[Sep 26 17:25:42] ERROR[53] cel_pgsql.c: cel_pgsql: Unable to connect to database server postgres.  Calls will not be logged!
+[Sep 26 17:25:42] ERROR[53] cel_pgsql.c: cel_pgsql: Reason: connection to server at "postgres" (172.18.0.2), port 5432 failed: FATAL:  password authentication failed for user "callcenter"
+
+[Sep 26 17:25:51] ERROR[53] cel_pgsql.c: cel_pgsql: Unable to connect to database server postgres.  Calls will not be logged!
+[Sep 26 17:25:51] ERROR[53] cel_pgsql.c: cel_pgsql: Reason: connection to server at "postgres" (172.18.0.2), port 5432 failed: FATAL:  password authentication failed for user "callcenter"
+
+[Sep 26 17:25:51] ERROR[53] cel_pgsql.c: cel_pgsql: Unable to connect to database server postgres.  Calls will not be logged!
+[Sep 26 17:25:51] ERROR[53] cel_pgsql.c: cel_pgsql: Reason: connection to server at "postgres" (172.18.0.2), port 5432 failed: FATAL:  password authentication failed for user "callcenter"
+
+[Sep 26 17:25:51] ERROR[53] cel_pgsql.c: cel_pgsql: Unable to connect to database server postgres.  Calls will not be logged!
+[Sep 26 17:25:51] ERROR[53] cel_pgsql.c: cel_pgsql: Reason: connection to server at "postgres" (172.18.0.2), port 5432 failed: FATAL:  password authentication failed for user "callcenter"
+
+[Sep 26 17:25:51] ERROR[53] cel_pgsql.c: cel_pgsql: Unable to connect to database server postgres.  Calls will not be logged!
+[Sep 26 17:25:51] ERROR[53] cel_pgsql.c: cel_pgsql: Reason: connection to server at "postgres" (172.18.0.2), port 5432 failed: FATAL:  password authentication failed for user "callcenter"
+
+[Sep 26 17:26:00] ERROR[52] cdr_pgsql.c: Unable to connect to database server postgres.  Calls will not be logged!
+[Sep 26 17:26:00] ERROR[52] cdr_pgsql.c: Reason: connection to server at "postgres" (172.18.0.2), port 5432 failed: FATAL:  password authentication failed for user "callcenter"
+
+[Sep 26 17:26:00] ERROR[53] cel_pgsql.c: cel_pgsql: Unable to connect to database server postgres.  Calls will not be logged!
+[Sep 26 17:26:00] ERROR[53] cel_pgsql.c: cel_pgsql: Reason: connection to server at "postgres" (172.18.0.2), port 5432 failed: FATAL:  password authentication failed for user "callcenter"
+
+[Sep 26 17:26:00] ERROR[53] cel_pgsql.c: cel_pgsql: Unable to connect to database server postgres.  Calls will not be logged!
+[Sep 26 17:26:00] ERROR[53] cel_pgsql.c: cel_pgsql: Reason: connection to server at "postgres" (172.18.0.2), port 5432 failed: FATAL:  password authentication failed for user "callcenter"
+
+[Sep 26 17:26:00] ERROR[53] cel_pgsql.c: cel_pgsql: Unable to connect to database server postgres.  Calls will not be logged!
+[Sep 26 17:26:00] ERROR[53] cel_pgsql.c: cel_pgsql: Reason: connection to server at "postgres" (172.18.0.2), port 5432 failed: FATAL:  password authentication failed for user "callcenter"
+
+[Sep 26 17:26:00] ERROR[53] cel_pgsql.c: cel_pgsql: Unable to connect to database server postgres.  Calls will not be logged!
+[Sep 26 17:26:00] ERROR[53] cel_pgsql.c: cel_pgsql: Reason: connection to server at "postgres" (172.18.0.2), port 5432 failed: FATAL:  password authentication failed for user "callcenter"
+
+[Sep 26 17:26:00] ERROR[53] cel_pgsql.c: cel_pgsql: Unable to connect to database server postgres.  Calls will not be logged!
+[Sep 26 17:26:00] ERROR[53] cel_pgsql.c: cel_pgsql: Reason: connection to server at "postgres" (172.18.0.2), port 5432 failed: FATAL:  password authentication failed for user "callcenter"
+
+[Sep 26 17:26:00] ERROR[53] cel_pgsql.c: cel_pgsql: Unable to connect to database server postgres.  Calls will not be logged!
+[Sep 26 17:26:00] ERROR[53] cel_pgsql.c: cel_pgsql: Reason: connection to server at "postgres" (172.18.0.2), port 5432 failed: FATAL:  password authentication failed for user "callcenter"
+
+[Sep 26 17:26:00] ERROR[53] cel_pgsql.c: cel_pgsql: Unable to connect to database server postgres.  Calls will not be logged!
+[Sep 26 17:26:00] ERROR[53] cel_pgsql.c: cel_pgsql: Reason: connection to server at "postgres" (172.18.0.2), port 5432 failed: FATAL:  password authentication failed for user "callcenter"
+
+[Sep 26 17:27:02] ERROR[53] cel_pgsql.c: cel_pgsql: Unable to connect to database server postgres.  Calls will not be logged!
+[Sep 26 17:27:02] ERROR[53] cel_pgsql.c: cel_pgsql: Reason: connection to server at "postgres" (172.18.0.2), port 5432 failed: FATAL:  password authentication failed for user "callcenter"
+
+[Sep 26 17:27:02] ERROR[53] cel_pgsql.c: cel_pgsql: Unable to connect to database server postgres.  Calls will not be logged!
+[Sep 26 17:27:02] ERROR[53] cel_pgsql.c: cel_pgsql: Reason: connection to server at "postgres" (172.18.0.2), port 5432 failed: FATAL:  password authentication failed for user "callcenter"
+
+[Sep 26 17:27:13] ERROR[53] cel_pgsql.c: cel_pgsql: Unable to connect to database server postgres.  Calls will not be logged!
+[Sep 26 17:27:13] ERROR[53] cel_pgsql.c: cel_pgsql: Reason: connection to server at "postgres" (172.18.0.2), port 5432 failed: FATAL:  password authentication failed for user "callcenter"
+
+[Sep 26 17:27:13] ERROR[53] cel_pgsql.c: cel_pgsql: Unable to connect to database server postgres.  Calls will not be logged!
+[Sep 26 17:27:13] ERROR[53] cel_pgsql.c: cel_pgsql: Reason: connection to server at "postgres" (172.18.0.2), port 5432 failed: FATAL:  password authentication failed for user "callcenter"
+
+[Sep 26 17:27:13] ERROR[53] cel_pgsql.c: cel_pgsql: Unable to connect to database server postgres.  Calls will not be logged!
+[Sep 26 17:27:13] ERROR[53] cel_pgsql.c: cel_pgsql: Reason: connection to server at "postgres" (172.18.0.2), port 5432 failed: FATAL:  password authentication failed for user "callcenter"
+
+[Sep 26 17:27:13] ERROR[53] cel_pgsql.c: cel_pgsql: Unable to connect to database server postgres.  Calls will not be logged!
+[Sep 26 17:27:13] ERROR[53] cel_pgsql.c: cel_pgsql: Reason: connection to server at "postgres" (172.18.0.2), port 5432 failed: FATAL:  password authentication failed for user "callcenter"
+
+[Sep 26 17:27:45] ERROR[53] cel_pgsql.c: cel_pgsql: Unable to connect to database server postgres.  Calls will not be logged!
+[Sep 26 17:27:45] ERROR[53] cel_pgsql.c: cel_pgsql: Reason: connection to server at "postgres" (172.18.0.2), port 5432 failed: FATAL:  password authentication failed for user "callcenter"
+
+[Sep 26 17:27:45] ERROR[52] cdr_pgsql.c: Unable to connect to database server postgres.  Calls will not be logged!
+[Sep 26 17:27:45] ERROR[52] cdr_pgsql.c: Reason: connection to server at "postgres" (172.18.0.2), port 5432 failed: FATAL:  password authentication failed for user "callcenter"
+
+[Sep 26 17:27:45] ERROR[53] cel_pgsql.c: cel_pgsql: Unable to connect to database server postgres.  Calls will not be logged!
+[Sep 26 17:27:45] ERROR[53] cel_pgsql.c: cel_pgsql: Reason: connection to server at "postgres" (172.18.0.2), port 5432 failed: FATAL:  password authentication failed for user "callcenter"
+
+[Sep 26 17:27:45] ERROR[53] cel_pgsql.c: cel_pgsql: Unable to connect to database server postgres.  Calls will not be logged!
+[Sep 26 17:27:45] ERROR[53] cel_pgsql.c: cel_pgsql: Reason: connection to server at "postgres" (172.18.0.2), port 5432 failed: FATAL:  password authentication failed for user "callcenter"
+
+[Sep 26 17:27:45] ERROR[53] cel_pgsql.c: cel_pgsql: Unable to connect to database server postgres.  Calls will not be logged!
+[Sep 26 17:27:45] ERROR[53] cel_pgsql.c: cel_pgsql: Reason: connection to server at "postgres" (172.18.0.2), port 5432 failed: FATAL:  password authentication failed for user "callcenter"
+
+[Sep 26 17:27:45] ERROR[53] cel_pgsql.c: cel_pgsql: Unable to connect to database server postgres.  Calls will not be logged!
+[Sep 26 17:27:45] ERROR[53] cel_pgsql.c: cel_pgsql: Reason: connection to server at "postgres" (172.18.0.2), port 5432 failed: FATAL:  password authentication failed for user "callcenter"
+
+[Sep 26 17:27:45] ERROR[53] cel_pgsql.c: cel_pgsql: Unable to connect to database server postgres.  Calls will not be logged!
+[Sep 26 17:27:45] ERROR[53] cel_pgsql.c: cel_pgsql: Reason: connection to server at "postgres" (172.18.0.2), port 5432 failed: FATAL:  password authentication failed for user "callcenter"
+
+[Sep 26 17:27:45] ERROR[53] cel_pgsql.c: cel_pgsql: Unable to connect to database server postgres.  Calls will not be logged!
+[Sep 26 17:27:45] ERROR[53] cel_pgsql.c: cel_pgsql: Reason: connection to server at "postgres" (172.18.0.2), port 5432 failed: FATAL:  password authentication failed for user "callcenter"
+
+[Sep 26 17:29:10] ERROR[53] cel_pgsql.c: cel_pgsql: Unable to connect to database server postgres.  Calls will not be logged!
+[Sep 26 17:29:10] ERROR[53] cel_pgsql.c: cel_pgsql: Reason: connection to server at "postgres" (172.18.0.2), port 5432 failed: FATAL:  password authentication failed for user "callcenter"
+
+[Sep 26 17:29:10] ERROR[53] cel_pgsql.c: cel_pgsql: Unable to connect to database server postgres.  Calls will not be logged!
+[Sep 26 17:29:10] ERROR[53] cel_pgsql.c: cel_pgsql: Reason: connection to server at "postgres" (172.18.0.2), port 5432 failed: FATAL:  password authentication failed for user "callcenter"
+
+[Sep 26 17:29:15] ERROR[53] cel_pgsql.c: cel_pgsql: Unable to connect to database server postgres.  Calls will not be logged!
+[Sep 26 17:29:15] ERROR[53] cel_pgsql.c: cel_pgsql: Reason: connection to server at "postgres" (172.18.0.2), port 5432 failed: FATAL:  password authentication failed for user "callcenter"
+
+[Sep 26 17:29:15] ERROR[53] cel_pgsql.c: cel_pgsql: Unable to connect to database server postgres.  Calls will not be logged!
+[Sep 26 17:29:15] ERROR[53] cel_pgsql.c: cel_pgsql: Reason: connection to server at "postgres" (172.18.0.2), port 5432 failed: FATAL:  password authentication failed for user "callcenter"
+
+[Sep 26 17:29:15] ERROR[53] cel_pgsql.c: cel_pgsql: Unable to connect to database server postgres.  Calls will not be logged!
+[Sep 26 17:29:15] ERROR[53] cel_pgsql.c: cel_pgsql: Reason: connection to server at "postgres" (172.18.0.2), port 5432 failed: FATAL:  password authentication failed for user "callcenter"
+
+[Sep 26 17:29:15] ERROR[53] cel_pgsql.c: cel_pgsql: Unable to connect to database server postgres.  Calls will not be logged!
+[Sep 26 17:29:15] ERROR[53] cel_pgsql.c: cel_pgsql: Reason: connection to server at "postgres" (172.18.0.2), port 5432 failed: FATAL:  password authentication failed for user "callcenter"
+
+[Sep 26 17:29:15] ERROR[52] cdr_pgsql.c: Unable to connect to database server postgres.  Calls will not be logged!
+[Sep 26 17:29:15] ERROR[52] cdr_pgsql.c: Reason: connection to server at "postgres" (172.18.0.2), port 5432 failed: FATAL:  password authentication failed for user "callcenter"
+
+[Sep 26 17:29:15] ERROR[53] cel_pgsql.c: cel_pgsql: Unable to connect to database server postgres.  Calls will not be logged!
+[Sep 26 17:29:15] ERROR[53] cel_pgsql.c: cel_pgsql: Reason: connection to server at "postgres" (172.18.0.2), port 5432 failed: FATAL:  password authentication failed for user "callcenter"
+
+[Sep 26 17:30:12] ERROR[53] cel_pgsql.c: cel_pgsql: Unable to connect to database server postgres.  Calls will not be logged!
+[Sep 26 17:30:12] ERROR[53] cel_pgsql.c: cel_pgsql: Reason: connection to server at "postgres" (172.18.0.2), port 5432 failed: FATAL:  password authentication failed for user "callcenter"
+
+[Sep 26 17:30:12] ERROR[53] cel_pgsql.c: cel_pgsql: Unable to connect to database server postgres.  Calls will not be logged!
+[Sep 26 17:30:12] ERROR[53] cel_pgsql.c: cel_pgsql: Reason: connection to server at "postgres" (172.18.0.2), port 5432 failed: FATAL:  password authentication failed for user "callcenter"
+
+[Sep 26 17:30:19] ERROR[53] cel_pgsql.c: cel_pgsql: Unable to connect to database server postgres.  Calls will not be logged!
+[Sep 26 17:30:19] ERROR[53] cel_pgsql.c: cel_pgsql: Reason: connection to server at "postgres" (172.18.0.2), port 5432 failed: FATAL:  password authentication failed for user "callcenter"
+
+[Sep 26 17:30:19] ERROR[53] cel_pgsql.c: cel_pgsql: Unable to connect to database server postgres.  Calls will not be logged!
+[Sep 26 17:30:19] ERROR[53] cel_pgsql.c: cel_pgsql: Reason: connection to server at "postgres" (172.18.0.2), port 5432 failed: FATAL:  password authentication failed for user "callcenter"
+
+[Sep 26 17:30:19] ERROR[53] cel_pgsql.c: cel_pgsql: Unable to connect to database server postgres.  Calls will not be logged!
+[Sep 26 17:30:19] ERROR[53] cel_pgsql.c: cel_pgsql: Reason: connection to server at "postgres" (172.18.0.2), port 5432 failed: FATAL:  password authentication failed for user "callcenter"
+
+[Sep 26 17:30:19] ERROR[53] cel_pgsql.c: cel_pgsql: Unable to connect to database server postgres.  Calls will not be logged!
+[Sep 26 17:30:19] ERROR[53] cel_pgsql.c: cel_pgsql: Reason: connection to server at "postgres" (172.18.0.2), port 5432 failed: FATAL:  password authentication failed for user "callcenter"
+
+[Sep 26 17:30:23] ERROR[53] cel_pgsql.c: cel_pgsql: Unable to connect to database server postgres.  Calls will not be logged!
+[Sep 26 17:30:23] ERROR[53] cel_pgsql.c: cel_pgsql: Reason: connection to server at "postgres" (172.18.0.2), port 5432 failed: FATAL:  password authentication failed for user "callcenter"
+
+[Sep 26 17:30:23] ERROR[52] cdr_pgsql.c: Unable to connect to database server postgres.  Calls will not be logged!
+[Sep 26 17:30:23] ERROR[52] cdr_pgsql.c: Reason: connection to server at "postgres" (172.18.0.2), port 5432 failed: FATAL:  password authentication failed for user "callcenter"
+
+[Sep 26 17:30:23] ERROR[53] cel_pgsql.c: cel_pgsql: Unable to connect to database server postgres.  Calls will not be logged!
+[Sep 26 17:30:23] ERROR[53] cel_pgsql.c: cel_pgsql: Reason: connection to server at "postgres" (172.18.0.2), port 5432 failed: FATAL:  password authentication failed for user "callcenter"
+
+[Sep 26 17:30:23] ERROR[53] cel_pgsql.c: cel_pgsql: Unable to connect to database server postgres.  Calls will not be logged!
+[Sep 26 17:30:23] ERROR[53] cel_pgsql.c: cel_pgsql: Reason: connection to server at "postgres" (172.18.0.2), port 5432 failed: FATAL:  password authentication failed for user "callcenter"
+
+[Sep 26 17:30:23] ERROR[53] cel_pgsql.c: cel_pgsql: Unable to connect to database server postgres.  Calls will not be logged!
+[Sep 26 17:30:23] ERROR[53] cel_pgsql.c: cel_pgsql: Reason: connection to server at "postgres" (172.18.0.2), port 5432 failed: FATAL:  password authentication failed for user "callcenter"
+
+[Sep 26 17:30:23] ERROR[53] cel_pgsql.c: cel_pgsql: Unable to connect to database server postgres.  Calls will not be logged!
+[Sep 26 17:30:23] ERROR[53] cel_pgsql.c: cel_pgsql: Reason: connection to server at "postgres" (172.18.0.2), port 5432 failed: FATAL:  password authentication failed for user "callcenter"
+
+[Sep 26 17:30:23] ERROR[53] cel_pgsql.c: cel_pgsql: Unable to connect to database server postgres.  Calls will not be logged!
+[Sep 26 17:30:23] ERROR[53] cel_pgsql.c: cel_pgsql: Reason: connection to server at "postgres" (172.18.0.2), port 5432 failed: FATAL:  password authentication failed for user "callcenter"
+
+[Sep 26 17:30:23] ERROR[53] cel_pgsql.c: cel_pgsql: Unable to connect to database server postgres.  Calls will not be logged!
+[Sep 26 17:30:23] ERROR[53] cel_pgsql.c: cel_pgsql: Reason: connection to server at "postgres" (172.18.0.2), port 5432 failed: FATAL:  password authentication failed for user "callcenter"
+
+[Sep 26 17:40:24] ERROR[53] cel_pgsql.c: cel_pgsql: Unable to connect to database server postgres.  Calls will not be logged!
+[Sep 26 17:40:24] ERROR[53] cel_pgsql.c: cel_pgsql: Reason: connection to server at "postgres" (172.18.0.2), port 5432 failed: FATAL:  password authentication failed for user "callcenter"
+
+[Sep 26 17:40:24] ERROR[53] cel_pgsql.c: cel_pgsql: Unable to connect to database server postgres.  Calls will not be logged!
+[Sep 26 17:40:24] ERROR[53] cel_pgsql.c: cel_pgsql: Reason: connection to server at "postgres" (172.18.0.2), port 5432 failed: FATAL:  password authentication failed for user "callcenter"
+
+[Sep 26 17:40:39] ERROR[53] cel_pgsql.c: cel_pgsql: Unable to connect to database server postgres.  Calls will not be logged!
+[Sep 26 17:40:39] ERROR[53] cel_pgsql.c: cel_pgsql: Reason: connection to server at "postgres" (172.18.0.2), port 5432 failed: FATAL:  password authentication failed for user "callcenter"
+
+[Sep 26 17:40:39] ERROR[53] cel_pgsql.c: cel_pgsql: Unable to connect to database server postgres.  Calls will not be logged!
+[Sep 26 17:40:39] ERROR[53] cel_pgsql.c: cel_pgsql: Reason: connection to server at "postgres" (172.18.0.2), port 5432 failed: FATAL:  password authentication failed for user "callcenter"
+
+[Sep 26 17:40:39] ERROR[53] cel_pgsql.c: cel_pgsql: Unable to connect to database server postgres.  Calls will not be logged!
+[Sep 26 17:40:39] ERROR[53] cel_pgsql.c: cel_pgsql: Reason: connection to server at "postgres" (172.18.0.2), port 5432 failed: FATAL:  password authentication failed for user "callcenter"
+
+[Sep 26 17:40:39] ERROR[53] cel_pgsql.c: cel_pgsql: Unable to connect to database server postgres.  Calls will not be logged!
+[Sep 26 17:40:39] ERROR[53] cel_pgsql.c: cel_pgsql: Reason: connection to server at "postgres" (172.18.0.2), port 5432 failed: FATAL:  password authentication failed for user "callcenter"
+
+[Sep 26 17:40:50] ERROR[52] cdr_pgsql.c: Unable to connect to database server postgres.  Calls will not be logged!
+[Sep 26 17:40:50] ERROR[52] cdr_pgsql.c: Reason: connection to server at "postgres" (172.18.0.2), port 5432 failed: FATAL:  password authentication failed for user "callcenter"
+
+[Sep 26 17:40:50] ERROR[53] cel_pgsql.c: cel_pgsql: Unable to connect to database server postgres.  Calls will not be logged!
+[Sep 26 17:40:50] ERROR[53] cel_pgsql.c: cel_pgsql: Reason: connection to server at "postgres" (172.18.0.2), port 5432 failed: FATAL:  password authentication failed for user "callcenter"
+
+[Sep 26 17:40:50] ERROR[53] cel_pgsql.c: cel_pgsql: Unable to connect to database server postgres.  Calls will not be logged!
+[Sep 26 17:40:50] ERROR[53] cel_pgsql.c: cel_pgsql: Reason: connection to server at "postgres" (172.18.0.2), port 5432 failed: FATAL:  password authentication failed for user "callcenter"
+
+[Sep 26 17:40:50] ERROR[53] cel_pgsql.c: cel_pgsql: Unable to connect to database server postgres.  Calls will not be logged!
+[Sep 26 17:40:50] ERROR[53] cel_pgsql.c: cel_pgsql: Reason: connection to server at "postgres" (172.18.0.2), port 5432 failed: FATAL:  password authentication failed for user "callcenter"
+
+[Sep 26 17:40:50] ERROR[53] cel_pgsql.c: cel_pgsql: Unable to connect to database server postgres.  Calls will not be logged!
+[Sep 26 17:40:50] ERROR[53] cel_pgsql.c: cel_pgsql: Reason: connection to server at "postgres" (172.18.0.2), port 5432 failed: FATAL:  password authentication failed for user "callcenter"
+
+[Sep 26 17:40:50] ERROR[53] cel_pgsql.c: cel_pgsql: Unable to connect to database server postgres.  Calls will not be logged!
+[Sep 26 17:40:50] ERROR[53] cel_pgsql.c: cel_pgsql: Reason: connection to server at "postgres" (172.18.0.2), port 5432 failed: FATAL:  password authentication failed for user "callcenter"
+
+[Sep 26 17:40:50] ERROR[53] cel_pgsql.c: cel_pgsql: Unable to connect to database server postgres.  Calls will not be logged!
+[Sep 26 17:40:50] ERROR[53] cel_pgsql.c: cel_pgsql: Reason: connection to server at "postgres" (172.18.0.2), port 5432 failed: FATAL:  password authentication failed for user "callcenter"
+
+[Sep 26 17:40:50] ERROR[53] cel_pgsql.c: cel_pgsql: Unable to connect to database server postgres.  Calls will not be logged!
+[Sep 26 17:40:50] ERROR[53] cel_pgsql.c: cel_pgsql: Reason: connection to server at "postgres" (172.18.0.2), port 5432 failed: FATAL:  password authentication failed for user "callcenter"
+
+[Sep 26 17:42:44] Asterisk 22.10.1 built by root @ buildkitsandbox on a x86_64 running Linux on 2026-09-16 12:59:15 UTC
+[Sep 26 17:42:44] NOTICE[1] loader.c: 341 modules will be loaded.
+[Sep 26 17:42:45] NOTICE[1] cdr.c: CDR simple logging enabled.
+[Sep 26 17:42:45] NOTICE[1] indications.c: Default country for indication tones: us
+[Sep 26 17:42:45] NOTICE[1] indications.c: Setting default indication country to 'us'
+[Sep 26 17:42:45] WARNING[1] res_phoneprov.c: Unable to find a valid server address or name.
+[Sep 26 17:42:45] NOTICE[1] res_smdi.c: No SMDI interfaces are available to listen on, not starting SMDI listener.
+[Sep 26 17:42:45] WARNING[1] res_musiconhold.c: No music on hold classes configured, disabling music on hold.
+[Sep 26 17:42:45] NOTICE[1] confbridge/conf_config_parser.c: Adding default_menu menu to app_confbridge
+[Sep 26 17:42:45] NOTICE[1] cdrel_custom/config.c: cdr_custom.conf: Loaded 0 configs
+[Sep 26 17:42:45] WARNING[1] config.c: parse error: No category context for line 64 of /etc/asterisk/cel_sqlite3_custom.conf
+[Sep 26 17:42:45] ERROR[1] cdrel_custom/config.c: Unable to load cel_sqlite3_custom.conf. Not logging CELs to custom database
+[Sep 26 17:42:45] NOTICE[1] cdrel_custom/config.c: cel_custom.conf: Loaded 0 configs
+[Sep 26 17:42:45] NOTICE[1] cdrel_custom/config.c: cdr_sqlite3_custom.conf: Loaded 0 configs
+[Sep 26 17:42:45] WARNING[1] ael/pval.c: Warning: file /etc/asterisk/extensions.ael, line 196-196: macro call to ael-dundi-e164 cannot be found in the AEL code!
+[Sep 26 17:42:45] WARNING[1] ael/pval.c: Warning: file /etc/asterisk/extensions.ael, line 209-209: macro call to ael-dundi-e164 cannot be found in the AEL code!
+[Sep 26 17:42:45] WARNING[1] ael/pval.c: Warning: file /etc/asterisk/extensions.ael, line 328-328: macro call to ael-std-exten-ael cannot be found in the AEL code!
+[Sep 26 17:42:46] WARNING[1] loader.c: Some non-required modules failed to load.
+[Sep 26 17:42:46] WARNING[1] loader.c: Module 'res_adsi' has been loaded but may be removed in a future release.
+[Sep 26 17:42:46] WARNING[1] loader.c: Module 'app_adsiprog' has been loaded but may be removed in a future release.
+[Sep 26 17:42:46] WARNING[1] loader.c: Module 'app_getcpeid' has been loaded but may be removed in a future release.
+[Sep 26 17:42:46] ERROR[1] loader.c: Error loading module 'format_ogg_vorbis.so': libvorbisenc.so.2: cannot open shared object file: No such file or directory
+[Sep 26 17:42:46] ERROR[1] loader.c: cdr_csv declined to load.
+[Sep 26 17:42:46] ERROR[1] loader.c: cdr_custom declined to load.
+[Sep 26 17:42:46] ERROR[1] loader.c: cel_sqlite3_custom declined to load.
+[Sep 26 17:42:46] ERROR[1] loader.c: cel_custom declined to load.
+[Sep 26 17:42:46] ERROR[1] loader.c: cdr_sqlite3_custom declined to load.
+[Sep 26 17:42:46] WARNING[34] pbx_config.c: users.conf is deprecated and will be removed in a future version of Asterisk
+[Sep 26 17:42:46] WARNING[1] res_config_pgsql.c: Table queue_log requires a column 'data1' of size '20', but no such column exists.
+[Sep 26 17:42:46] WARNING[1] res_config_pgsql.c: Table queue_log requires a column 'data2' of size '20', but no such column exists.
+[Sep 26 17:42:46] WARNING[1] res_config_pgsql.c: Table queue_log requires a column 'data3' of size '20', but no such column exists.
+[Sep 26 17:42:46] WARNING[1] res_config_pgsql.c: Table queue_log requires a column 'data4' of size '20', but no such column exists.
+[Sep 26 17:42:46] WARNING[1] res_config_pgsql.c: Table queue_log requires a column 'data5' of size '20', but no such column exists.
+[Sep 26 17:43:22] ERROR[59] res_pjsip.c: Endpoint '1010': Could not create dialog to invalid URI '1010'.  Is endpoint registered and reachable?
+[Sep 26 17:43:22] ERROR[59] chan_pjsip.c: Failed to create outgoing session to endpoint '1010'
+[Sep 26 17:43:22] NOTICE[185][C-00000001] app_dial.c: Unable to create channel of type 'PJSIP' (cause 3 - No route to destination)
+[Sep 26 17:43:51] ERROR[59] res_pjsip.c: Endpoint '1010': Could not create dialog to invalid URI '1010'.  Is endpoint registered and reachable?
+[Sep 26 17:43:51] ERROR[59] chan_pjsip.c: Failed to create outgoing session to endpoint '1010'
+[Sep 26 17:43:51] NOTICE[226][C-00000002] app_dial.c: Unable to create channel of type 'PJSIP' (cause 3 - No route to destination)

@@ -1,0 +1,62 @@
+services:
+  asterisk:
+    image: andrius/asterisk:22
+    container_name: asterisk-lab
+    ports:
+      - "5038:5038"
+      - "5060:5060/udp"
+      - "5060:5060/tcp"
+      - "10000-10100:10000-10100/udp"
+    environment:
+      PGHOST: postgres
+      PGPORT: "5432"
+      PGDATABASE: callcenter
+      PGUSER: callcenter
+      PGPASSWORD: f0d80ae22a43b69065d636c234e0a428
+    volumes:
+      - ./asterisk-config:/etc/asterisk
+      - ./asterisk-recordings:/var/spool/asterisk/monitor
+      - ./asterisk-logs:/var/log/asterisk
+    restart: unless-stopped
+
+  postgres:
+    image: postgres:16-alpine
+    container_name: asterisk-pg
+    environment:
+      POSTGRES_USER: callcenter
+      POSTGRES_PASSWORD: f0d80ae22a43b69065d636c234e0a428
+      POSTGRES_DB: callcenter
+    ports:
+      - "5432:5432"
+    volumes:
+      - pg_data:/var/lib/postgresql/data
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U callcenter -d callcenter"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  backup:
+    image: postgres:16-alpine
+    container_name: asterisk-pg-backup
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      PGHOST: postgres
+      PGPORT: "5432"
+      PGDATABASE: callcenter
+      PGUSER: callcenter
+      PGPASSWORD: f0d80ae22a43b69065d636c234e0a428
+      BACKUP_INTERVAL_HOURS: "24"
+      BACKUP_RETENTION_DAYS: "30"
+      BACKUP_DIR: /backups
+    volumes:
+      - ./asterisk-backups:/backups
+      - ./scripts/backup-loop.sh:/backup-loop.sh:ro
+    entrypoint: ["/bin/sh", "/backup-loop.sh"]
+    restart: unless-stopped
+
+volumes:
+  pg_data:

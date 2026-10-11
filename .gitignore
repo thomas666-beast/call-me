@@ -1,0 +1,33 @@
+# Rust build artifacts
+/backend/target/
+
+# env
+/backend/.env
+
+# Uncomment if you don't want to commit Cargo.lock
+# (Usually keep it for applications; libraries often omit it.)
+# Cargo.lock
+
+# VS Code: ignore workspace files, but keep shared project settings
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+
+# JetBrains IDEs: IntelliJ IDEA, RustRover, etc.
+.idea/
+*.iml
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Extra
+/asterisk-logs/*/
+/asterisk-recordings/*
+/asterisk-backups/*
+
+# Front
+/frontend/node_modules/
